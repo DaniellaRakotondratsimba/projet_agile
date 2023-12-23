@@ -39,4 +39,9 @@ public class Player {
 		this.role = role;
 	}
 	
+	public Player() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
 }

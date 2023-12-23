@@ -17,7 +17,7 @@ public class PlayerController {
     @GetMapping("/players")
     public String listPlayer(Model model) {
         model.addAttribute("players", playerRepository.findAll());
-        return "listPlayers";
+        return "listPlayer";
     }
 
     @GetMapping("/listPlayer")
@@ -28,6 +28,6 @@ public class PlayerController {
     @PostMapping("/addPlayer")
     public String addPlayer(Player player) {
         playerRepository.save(player);
-        return "redirect:/players";
+        return "redirect:/listPlayer";
     }
 }
