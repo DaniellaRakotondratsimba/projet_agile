@@ -9,13 +9,15 @@ import org.springframework.web.bind.annotation.PostMapping;
 import agile_project.models.Player;
 import agile_project.repositories.PlayerRepository;
 
+
 @Controller
 public class PlayerController {
 	@Autowired
     private PlayerRepository playerRepository;
 
+    
     @GetMapping("/players")
-    public String listPlayer(Model model) {
+    public String showListPlayer(Model model) {
         model.addAttribute("players", playerRepository.findAll());
         return "listPlayer";
     }
