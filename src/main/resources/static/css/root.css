@@ -3,38 +3,20 @@
 	height: 100vh;
 }
 
-#listplayer {
-	width: 500px;
-	height: 550px;
-	position: fixed;
-	top: 100px;
-	left: 200px;
-	background-color: lightgray;
+#headapp {
+	position: absolute;
+	top: 10%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+	color: lightpink;
+  	font-family: serif;
 }
 
-#homemenu {
-	width: 500px;
-	height: 550px;
-	position: fixed;
-	top: 100px;
-	left: 800px;
-	background-color: lightgray;
-}
-
-#tableplayer {
-	margin-top: 10px;
-	text-align: center;
-	height: 400px;
-}
-
-#addplayer {
-	margin-left: 450px;
-	margin-top: 20px;
-}
-
-h3 {
-    position: relative;
-    top: 20px;
-    left: 30px;
-    font-family: serif;
+#titleapp {
+	position: absolute;
+	top: 20%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	font-family: serif;
+  	color: lightpink;
 }
