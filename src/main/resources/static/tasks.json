@@ -1,0 +1,83 @@
+[
+    {
+        "id_task": 1,
+        "task_name": "Configurer le catalogue de produits"
+    },
+    {
+        "id_task": 2, 
+        "task_name": "Mettre en place la navigation par catégorie"
+    },
+    {
+        "id_task": 3, 
+        "task_name": "Optimiser le processus de commande"
+    },
+    {
+        "id_task": 4, 
+        "task_name": "Créer la page de détails des produits"
+    },
+    {
+        "id_task": 5, 
+        "task_name": "Ajouter des filtres de recherche avancée"
+    },
+    {
+        "id_task": 6, 
+        "task_name": "Intégrer les avis clients"
+    },
+    {
+        "id_task": 7, 
+        "task_name": "Configurer les promotions et réductions"
+    },
+    {
+        "id_task": 8, 
+        "task_name": "Développer la fonctionnalité de wishlist"
+    },
+    {
+        "id_task": 9, 
+        "task_name": "Optimiser les performances du site"
+    },
+    {
+        "id_task": 10, 
+        "task_name": "Intégrer le suivi de livraison"
+    },
+    {
+        "id_task": 11, 
+        "task_name": "Créer la page d'accueil attrayante"
+    },
+    {
+        "id_task": 12, 
+        "task_name": "Configurer le système de paiement en plusieurs étapes"
+    },
+    {
+        "id_task": 13, 
+        "task_name": "Intégrer le chat en direct pour le support client"
+    },
+    {
+        "id_task": 14, 
+        "task_name": "Configurer les notifications par e-mail"
+    },
+    {
+        "id_task": 15, 
+        "task_name": "Mettre à jour les conditions générales d'utilisation"
+    },
+    {
+        "id_task": 16, 
+        "task_name": "Développer l'interface utilisateur mobile"
+    },
+    {
+        "id_task": 17, 
+        "task_name": "Optimiser le processus de retour des produits"
+    },
+    {
+        "id_task": 18, 
+        "task_name": "Configurer les options de personnalisation des produits"
+    },
+    {
+        "id_task": 19, 
+        "task_name": "Intégrer le système de points de fidélité"
+    },
+    {
+        "id_task": 20, 
+        "task_name": "Effectuer des tests de sécurité et de performance"
+    }
+  ]
+  

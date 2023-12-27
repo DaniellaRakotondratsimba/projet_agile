@@ -2,27 +2,10 @@ package agile_project.models;
 
 import java.util.List;
 
-import jakarta.persistence.ElementCollection;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-
-@Entity
-public class Game {
-	@Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id_game;
-	private int numberOfPlayers;
-	@ElementCollection
+public class GameCommand {
+    private int numberOfPlayers;
     private List<Long> selectedPlayers;
     private String rules;
-	public Long getId_game() {
-		return id_game;
-	}
-	public void setId_game(Long id_game) {
-		this.id_game = id_game;
-	}
 	public int getNumberOfPlayers() {
 		return numberOfPlayers;
 	}
@@ -42,15 +25,14 @@ public class Game {
 		this.rules = rules;
 	}
 	
-	public Game(Long id_game, int numberOfPlayers, List<Long> selectedPlayers, String rules) {
+	public GameCommand(int numberOfPlayers, List<Long> selectedPlayers, String rules) {
 		super();
-		this.id_game = id_game;
 		this.numberOfPlayers = numberOfPlayers;
 		this.selectedPlayers = selectedPlayers;
 		this.rules = rules;
 	}
 	
-	public Game() {
+	public GameCommand() {
 		super();
 		// TODO Auto-generated constructor stub
 	}

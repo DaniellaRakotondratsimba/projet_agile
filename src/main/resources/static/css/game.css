@@ -1,0 +1,32 @@
+#contenu {
+	position: absolute;
+	width: 1000px;
+	height: 600px;
+	background-color: lightgray;
+	top: 55%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  	display: flex;
+}
+
+#backlog {
+	width: 100%;
+	height: 150px;
+	background-color: lightpink;
+	margin: 5px;
+	box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+#taskList {
+	font-size: 30px;
+	width: 100%;
+	height: 50px;
+	margin-top: 60px;
+	margin-left: 200px;
+	font-family: serif;
+}
+
+#nextButton {
+	margin-left: 920px;
+}
