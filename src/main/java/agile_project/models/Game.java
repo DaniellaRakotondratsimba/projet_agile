@@ -10,13 +10,22 @@ import jakarta.persistence.Id;
 
 @Entity
 public class Game {
+	//Id généré automatiquement
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id_game;
+	
+	//nombre de joueurs
 	private int numberOfPlayers;
+	
+	//Liste des joueurs sélectionnés
 	@ElementCollection
     private List<Long> selectedPlayers;
+	
+	//règle du jeu
     private String rules;
+    
+    //getters et setters
 	public Long getId_game() {
 		return id_game;
 	}
@@ -42,6 +51,7 @@ public class Game {
 		this.rules = rules;
 	}
 	
+	//constructeur
 	public Game(Long id_game, int numberOfPlayers, List<Long> selectedPlayers, String rules) {
 		super();
 		this.id_game = id_game;
@@ -50,6 +60,7 @@ public class Game {
 		this.rules = rules;
 	}
 	
+	//constructeur par défaut
 	public Game() {
 		super();
 		// TODO Auto-generated constructor stub

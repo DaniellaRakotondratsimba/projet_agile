@@ -8,17 +8,27 @@ import jakarta.persistence.ManyToOne;
 
 @Entity
 public class Vote {
+	//Id généré automatiquement
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id_vote;
+	
+	//Relation many to one avec l'objet player
     @ManyToOne
     private Player player;
+    
+    //Relation many to one avec l'objet task
     @ManyToOne
     private Task task;
+    
+    //Relation many to one avec l'objet game
     @ManyToOne
     private Game game;
+    
+    //Estimation du vote
     private int estimation;
     
+    //Création des getters et setters pour tous les champs
 	public Long getId_vote() {
 		return id_vote;
 	}
@@ -50,6 +60,7 @@ public class Vote {
 		this.estimation = estimation;
 	}
 	
+	//Constructeur
 	public Vote(Long id_vote, Player player, Task task, Game game, int estimation) {
 		super();
 		this.id_vote = id_vote;
@@ -59,6 +70,7 @@ public class Vote {
 		this.estimation = estimation;
 	}
 	
+	//Constructeur par défaut
 	public Vote() {
 		super();
 		// TODO Auto-generated constructor stub

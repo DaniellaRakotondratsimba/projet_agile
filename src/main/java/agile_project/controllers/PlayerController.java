@@ -15,7 +15,7 @@ public class PlayerController {
 	@Autowired
     private PlayerRepository playerRepository;
 
-    
+    //afficher la liste des joueurs
     @GetMapping("/players")
     public String showListPlayer(Model model) {
         model.addAttribute("players", playerRepository.findAll());
@@ -27,6 +27,7 @@ public class PlayerController {
         return "listPlayer";
     }
 
+    //Ajouter un joueur
     @PostMapping("/addPlayer")
     public String addPlayer(Player player) {
         playerRepository.save(player);

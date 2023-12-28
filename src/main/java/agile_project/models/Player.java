@@ -7,12 +7,18 @@ import jakarta.persistence.Id;
 
 @Entity
 public class Player {
+	//Id généré automatiquement
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id_player;
+    
+    //Nom du joueur
 	private String player_name;
+	
+	//Rôle du joueur
 	private String role;
 	
+	//Getters et setters
 	public Long getId_player() {
 		return id_player;
 	}
@@ -32,6 +38,7 @@ public class Player {
 		this.role = role;
 	}
 	
+	//constructeur
 	public Player(Long id_player, String player_name, String role) {
 		super();
 		this.id_player = id_player;
@@ -39,6 +46,7 @@ public class Player {
 		this.role = role;
 	}
 	
+	//constructeur par défaut
 	public Player() {
 		super();
 		// TODO Auto-generated constructor stub
