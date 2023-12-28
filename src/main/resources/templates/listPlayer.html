@@ -23,32 +23,26 @@
 	
 	    <div id="contenu">
 			
-		<div class="container">
-		    <h2>Ajouter un Joueur</h2>
-		    <form th:action="@{/addPlayer}" th:object="${player}" method="post">
-		        <label>Nom du Joueur: <input type="text" th:field="*{player_name}" /></label><br/>
-		        <label>Rôle: <input type="text" th:field="*{role}" /></label><br/>
-		        <button type="submit">Ajouter</button>
-		    </form>
-		
-		    <h2>Liste des Joueurs</h2>
-		    <table>
-		        <thead>
-		            <tr>
-		                <th>ID</th>
-		                <th>Nom du Joueur</th>
-		                <th>Rôle</th>
-		            </tr>
-		        </thead>
-		        <tbody>
-		            <tr th:each="player : ${players}">
-		                <td th:text="${player.id_player}"></td>
-		                <td th:text="${player.player_name}"></td>
-		                <td th:text="${player.role}"></td>
-		            </tr>
-		        </tbody>
-		    </table>
-		</div>
+			<div class="container">
+			   
+			    <form th:action="@{/addPlayer}" th:object="${player}" method="post">
+				<div id="titleplayer">
+					 <h2>Ajouter un nouveau joueur</h2>
+				</div>
+				  <div class="mb-3">
+				    <label class="form-label">Entrez le pseudo :</label>
+				    <input type="text" th:field="*{player_name}" class="form-control">
+				    <div class="form-text">Vous pouvez mettre le nom complet.</div>
+				  </div>
+				  <div class="mb-3">
+				    <label class="form-label">Rôle :</label>
+				    <input type="text" th:field="*{role}" class="form-control">
+				  </div>
+				  <button type="submit" class="btn btn-success">Valider</button>
+				</form>
+			    
+			    <div id="retour"><a href="/createGame">Revenir à la création d'une partie</a></div>
+			</div>
 			
 	    </div>
 	    

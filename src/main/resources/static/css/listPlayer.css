@@ -9,3 +9,20 @@
   	box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   	display: flex;
 }
+
+form {
+	font-family: serif;
+	font-size: 20px;
+	margin: 30px;
+	margin-top:60px;
+}
+
+h2 {
+	font-family: serif;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+#retour {
+	margin-left: 700px;
+}
